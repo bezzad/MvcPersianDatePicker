@@ -1,9 +1,13 @@
 ﻿@using PersianDatePicker.Helper
 
+
+@{ ViewBag.Title = "Persian Date Picker"; }
+
+
 <div style="margin-top: 50px; clear: both;"></div>
 
 <div class="container" style="max-width: 200px;">
-    @Html.PersianDatePickerItem("testid1", true, DataPlacement.Bottom)
+    @Html.PersianDatePickerItem("testid1", true)
     @Html.PersianDatePickerItem("testid2", false, DataPlacement.Right)
 </div>
 
