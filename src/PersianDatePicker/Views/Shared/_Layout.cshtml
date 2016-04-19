@@ -1,0 +1,45 @@
+﻿@*<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <title>@ViewBag.Title - Test</title>
+    @Styles.Render("~/Content/bootstrap")
+    @Scripts.Render("~/bundles/PersianDateTimePicker")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jalaali")
+    @Scripts.Render("~/bundles/PersianDateTimePicker")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>*@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</head>
+<body>
+    @RenderBody()
+    <script src="~/Scripts/MdBootstrapPersianDateTimePicker/jalaali.js"></script>
+    <script src="~/Scripts/MdBootstrapPersianDateTimePicker/jquery.Bootstrap-PersianDateTimePicker.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

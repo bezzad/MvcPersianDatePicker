@@ -1,0 +1,14 @@
+﻿@using PersianDatePicker.Helper
+
+<div style="margin-top: 50px; clear: both;"></div>
+
+<div class="container" style="max-width: 200px;">
+    @Html.PersianDatePickerItem("testid1", true, DataPlacement.Bottom)
+    @Html.PersianDatePickerItem("testid2", false, DataPlacement.Right)
+</div>
+
+<div class="container" style="max-width: 400px;">
+    @Html.PersianFromToDatePickerItem("testid12", "testid22", false, DataPlacement.Bottom)
+    @Html.PersianFromToDatePickerItem(true, DataPlacement.Right)
+    @Html.PersianFromToDatePickerItem()
+</div>
