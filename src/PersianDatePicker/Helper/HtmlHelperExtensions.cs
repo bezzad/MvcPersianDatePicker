@@ -39,7 +39,7 @@ namespace PersianDatePicker.Helper
             var div = new TagBuilder("div");
             div.AddCssClass("row");
 
-            div.InnerHtml = $@"<div class='col-lg-6'>
+            div.InnerHtml = $@"<div class='col-xs-6'>
                                     <div class='input-group'>
                                         <div class='input-group-addon' data-MdDateTimePicker='true' data-trigger='click' data-targetselector='#{toId}' data-groupid='group1' data-todate='true' data-enabletimepicker='{hasTime.ToString().ToLower()}' data-placement='{datePickerPlacement.ToString().ToLower()}'>
                                             <span class='glyphicon glyphicon-calendar'></span>
@@ -47,7 +47,7 @@ namespace PersianDatePicker.Helper
                                         <input style='text-align: center;' type='text' class='form-control' id='{toId}' placeholder='تا تاریخ' data-MdDateTimePicker='true' data-Trigger='focus' data-targetselector='#{toId}' data-enabletimepicker='{hasTime.ToString().ToLower()}' data-groupid='{groupid}' data-todate='true'  data-placement='{datePickerPlacement.ToString().ToLower()}' />
                                     </div>
                                 </div>
-                                <div class='col-lg-6'>
+                                <div class='col-xs-6'>
                                     <div class='input-group'>
                                         <div class='input-group-addon' data-MdDateTimePicker='true' data-trigger='click' data-targetselector='#{fromId}' data-groupid='{groupid}' data-fromdate='true' data-enabletimepicker='{hasTime.ToString().ToLower()}' data-placement='{datePickerPlacement.ToString().ToLower()}'>
                                             <span class='glyphicon glyphicon-calendar'></span>
