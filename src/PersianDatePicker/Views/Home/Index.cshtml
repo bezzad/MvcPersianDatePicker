@@ -13,6 +13,8 @@
 
 <div class="container" style="max-width: 400px;">
     @Html.PersianFromToDatePickerItem("testid12", "testid22", false, DataPlacement.Bottom)
+    <input type="button" onclick="alert(GetDateTime('testid12'))" value="نمایش از تاریخ" style="float: right; margin: 5px;"/>
+    <input type="button" onclick="alert(GetDateTime('testid22'))" value="نمایش تا تاریخ" style="margin: 5px;"/>
 </div>
 <br />
 <div class="container" style="max-width: 500px;">
@@ -26,3 +28,11 @@
 <div class="container" style="max-width: 600px;">
     @Html.PersianDatePickerItem()
 </div>
+
+
+<script>
+    var GetDateTime = function (id) {
+        var date = $("#" + id).attr("data-MdPersianDateTimePickerSelectedDateTime");
+        return date;
+    }
+</script>

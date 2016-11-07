@@ -5,18 +5,12 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title - Test</title>
 
-    @Styles.Render("~/Content/bootstrap")
-    @Styles.Render("~/Content/PersianDateTimePicker")
+    @Styles.Render("~/Content/styles")
+    @Scripts.Render("~/bundles/scripts")
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+
 </head>
 <body>
     @RenderBody()
-
-    @Scripts.Render("~/bundles/jalaali")
-    @Scripts.Render("~/bundles/PersianDateTimePicker")
-
-    @RenderSection("Scripts", required: false)
 </body>
 </html>
